@@ -22,20 +22,15 @@ My research interests include **Reasoning Verification**, **Neuro-Symbolic AI**,
 
 # 📝 Publications
 
-*\* Equal contribution.*
+*<sup>*</sup> Equal contribution.*
 
-
-- [**Mining Logic under Uncertainty: Probabilistic Soft Logic with Energy-Based Inference for Chain-of-Thought Verification**](https://neurips.cc/Downloads/2026)  
-  **Jiang Yu**, Jinlong Tian, Kewei Cheng, Yue He, Haoxuan Li, Haotian Wang, Yunhai Wang, Wenjing Yang, Zhouchen Lin, Shixuan Liu  
-  **NeurIPS 2026**
-
-- [**LogicSAGE: Neuro-Symbolic Reasoning with Socratic-Guided Enhancement**](https://icml.cc/Downloads/2026)  
-  Jinlong Tian\*, **Jiang Yu\***, Kewei Cheng, Fengxiang Cheng, Yue He, Yunfei Wang, Haotian Wang, Haoxuan Li, Wenjing Yang, Shixuan Liu  
-  **ICML 2026**
-
-- [**Logical-SAGE: A Logical Socratic Architecture for Guided Evolution in Neuro-Symbolic Reasoning**](https://openreview.net/forum?id=65A1alu4Ib)  
-  Jinlong Tian\*, **Jiang Yu\***, Kewei Cheng, Yue He, Yunfei Wang, Huibin Tan, Haotian Wang, Wenjing Yang, Shixuan Liu  
-  **AAAI 2026 Bridge: Logical and Symbolic Reasoning in Language Models** · **Outstanding Paper Award**
+{% for paper in site.data.publications %}
+<p>
+<a href="{{ paper.url }}"><strong>{{ paper.title }}</strong></a><br>
+{{ paper.authors_html }}<br>
+<strong>{{ paper.venue }}</strong>{% if paper.award and paper.award != "" %} · <strong>{{ paper.award }}</strong>{% endif %}
+</p>
+{% endfor %}
 
 # 🔬 Research
 

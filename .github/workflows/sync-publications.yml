@@ -1,0 +1,44 @@
+name: Sync Publications
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 6 * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-publications.yml"
+      - "scripts/sync_publications.py"
+      - "_data/publication_overrides.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publication-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Sync public publication metadata
+        run: python scripts/sync_publications.py
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- _data/publications.json; then
+            echo "No publication changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/publications.json
+          git commit -m "Auto-sync publications"
+          git push
