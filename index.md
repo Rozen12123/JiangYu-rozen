@@ -17,6 +17,7 @@ My research interests include **Reasoning Verification**, **Neuro-Symbolic AI**,
 # ✨ News
 
 - *2026.09*: &nbsp;🎉 **Mining Logic under Uncertainty** was accepted by **NeurIPS 2026**.
+- *2026*: &nbsp;🏆 **Logical-SAGE** received an **Outstanding Paper Award** at the **AAAI 2026 Bridge on Logical and Symbolic Reasoning in Language Models**.
 - *2026*: &nbsp;🎉 **LogicSAGE** was accepted by **ICML 2026**.
 
 # 📝 Publications
@@ -28,6 +29,10 @@ My research interests include **Reasoning Verification**, **Neuro-Symbolic AI**,
 - [**LogicSAGE: Neuro-Symbolic Reasoning with Socratic-Guided Enhancement**](https://icml.cc/Downloads/2026)  
   Jinlong Tian, **Jiang Yu**, Kewei Cheng, Fengxiang Cheng, Yue He, Yunfei Wang, Haotian Wang, Haoxuan Li, Wenjing Yang, Shixuan Liu  
   **ICML 2026**
+
+- [**Logical-SAGE: A Logical Socratic Architecture for Guided Evolution in Neuro-Symbolic Reasoning**](https://openreview.net/forum?id=65A1alu4Ib)  
+  Jinlong Tian, **Jiang Yu**, Kewei Cheng, Yue He, Yunfei Wang, Huibin Tan, Haotian Wang, Wenjing Yang, Shixuan Liu  
+  **AAAI 2026 Bridge: Logical and Symbolic Reasoning in Language Models** · **Outstanding Paper Award**
 
 # 🔬 Research
 
