@@ -1,73 +1,231 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jiang Yu — Researcher in reliable reasoning, neuro-symbolic AI, and trustworthy foundation models.">
-  <title>Jiang Yu | Academic Homepage</title>
-  <style>
-    :root{--bg:#fff;--text:#22252a;--muted:#68707c;--line:#e7e9ed;--link:#2457a7;--soft:#f6f8fb;--max:1040px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65}
-    a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}.page{width:min(var(--max),calc(100% - 40px));margin:48px auto 72px;display:grid;grid-template-columns:245px 1fr;gap:58px}
-    aside{position:sticky;top:36px;align-self:start}.avatar{width:168px;height:168px;border-radius:50%;object-fit:cover;border:1px solid var(--line);display:block;margin-bottom:22px}
-    h1{font-size:2.05rem;line-height:1.15;margin:0 0 8px}.tagline{color:var(--muted);font-size:.98rem;margin-bottom:18px}.links{display:flex;flex-direction:column;gap:7px;font-size:.95rem}
-    main{min-width:0}section{margin-bottom:42px}h2{font-size:1.38rem;margin:0 0 17px;padding-bottom:8px;border-bottom:1px solid var(--line)}p{margin:0 0 14px}
-    .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}.chip{background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:5px 10px;font-size:.9rem}
-    .news{display:grid;grid-template-columns:90px 1fr;gap:9px 18px}.date{color:var(--muted);white-space:nowrap}.pub{margin-bottom:23px}.pub-title{font-weight:650;line-height:1.45;margin-bottom:4px}
-    .authors,.venue{font-size:.96rem}.venue{color:var(--muted);font-style:italic}.badge{display:inline-block;margin-top:7px;margin-right:8px;padding:2px 8px;border-radius:5px;background:var(--soft);border:1px solid var(--line);font-size:.84rem;color:var(--link)}
-    footer{color:var(--muted);font-size:.86rem;margin-top:52px;padding-top:16px;border-top:1px solid var(--line)}
-    @media(max-width:760px){.page{grid-template-columns:1fr;gap:30px;margin-top:28px}aside{position:static}.avatar{width:132px;height:132px}.links{flex-direction:row;flex-wrap:wrap;gap:8px 16px}.news{grid-template-columns:1fr;gap:2px}.news .date:not(:first-child){margin-top:9px}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Jiang Yu — Reliable Reasoning, Neuro-Symbolic AI, and Trustworthy Foundation Models.">
+<title>Jiang Yu | Academic Homepage</title>
+<style>
+:root{
+  --ink:#1f2937;--muted:#667085;--line:#e5e7eb;--blue:#1d4ed8;
+  --soft:#f8fafc;--accent:#eef4ff;--max:1080px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:#fff;color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.68
+}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topbar{
+  border-bottom:1px solid var(--line);background:rgba(255,255,255,.96);
+  position:sticky;top:0;z-index:20
+}
+.topbar-inner{
+  width:min(var(--max),calc(100% - 36px));margin:auto;height:58px;
+  display:flex;align-items:center;justify-content:space-between
+}
+.brand{font-weight:650;letter-spacing:.01em;color:#111827}
+.nav{display:flex;gap:24px;font-size:.93rem}
+.nav a{color:#4b5563}
+.shell{
+  width:min(var(--max),calc(100% - 36px));margin:44px auto 72px;
+  display:grid;grid-template-columns:245px 1fr;gap:58px
+}
+.sidebar{align-self:start;position:sticky;top:88px}
+.photo{
+  width:205px;height:auto;display:block;border-radius:7px;
+  box-shadow:0 1px 4px rgba(0,0,0,.12);margin-bottom:22px
+}
+.name{
+  font-family:Georgia,"Times New Roman",serif;font-size:2rem;
+  line-height:1.12;margin:0 0 7px;color:#111827
+}
+.role{font-size:.98rem;color:#475467;margin-bottom:18px}
+.profile-links{display:grid;gap:7px;font-size:.94rem}
+.profile-links a{display:flex;align-items:center;gap:8px;color:#344054}
+.dot{width:6px;height:6px;border-radius:50%;background:#98a2b3;display:inline-block}
+main{min-width:0}
+.hero{padding-top:2px;margin-bottom:37px}
+.hero h1{
+  font-family:Georgia,"Times New Roman",serif;font-weight:500;
+  font-size:2.45rem;letter-spacing:-.02em;margin:0 0 16px;color:#111827
+}
+.hero p{font-size:1.04rem;margin:0 0 14px;color:#344054}
+.interests{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{
+  font-size:.86rem;padding:5px 10px;border-radius:999px;
+  border:1px solid #d7e2f4;background:#f8fbff;color:#344b73
+}
+section{margin:0 0 42px}
+h2{
+  font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;font-weight:500;
+  color:#111827;border-bottom:1px solid var(--line);padding-bottom:8px;margin:0 0 18px
+}
+.news-row{display:grid;grid-template-columns:90px 1fr;gap:18px;padding:6px 0}
+.news-date{font-variant-numeric:tabular-nums;color:#667085;font-size:.92rem}
+.news-text{color:#344054}
+.pub{
+  display:grid;grid-template-columns:122px 1fr;gap:22px;
+  padding:15px 0 20px;border-bottom:1px solid #edf0f3
+}
+.pub:last-child{border-bottom:none}
+.pub-mark{
+  height:92px;border:1px solid #dbe3ec;border-radius:8px;
+  background:linear-gradient(145deg,#f8fbff,#eef4ff);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center
+}
+.pub-mark strong{font-family:Georgia,"Times New Roman",serif;font-size:1.07rem;color:#1e3a5f}
+.pub-mark span{font-size:.82rem;color:#667085;margin-top:2px}
+.pub-title{font-size:1.06rem;font-weight:650;line-height:1.45;color:#111827;margin-bottom:5px}
+.authors{font-size:.94rem;color:#475467;line-height:1.55}
+.venue{font-size:.94rem;color:#344054;margin-top:4px;font-style:italic}
+.buttons{display:flex;gap:9px;flex-wrap:wrap;margin-top:9px}
+.btn{
+  display:inline-block;border:1px solid #d0d5dd;border-radius:5px;
+  padding:3px 9px;font-size:.83rem;color:#344054;background:#fff
+}
+.btn:hover{background:#f8fafc;text-decoration:none}
+.theme-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.theme{border:1px solid var(--line);border-radius:8px;padding:17px;background:#fff}
+.theme-title{font-weight:650;color:#111827;margin-bottom:5px}
+.theme p{font-size:.92rem;color:#667085;margin:0}
+.note{font-size:.91rem;color:#667085}
+footer{
+  border-top:1px solid var(--line);padding-top:18px;margin-top:48px;
+  color:#98a2b3;font-size:.84rem
+}
+@media(max-width:800px){
+  .topbar{position:static}.nav{display:none}
+  .shell{grid-template-columns:1fr;gap:28px;margin-top:28px}
+  .sidebar{position:static;display:grid;grid-template-columns:130px 1fr;gap:20px;align-items:start}
+  .photo{width:130px;margin:0}
+  .profile-links{grid-column:1/-1;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero h1{font-size:2rem}.theme-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .sidebar{grid-template-columns:105px 1fr}.photo{width:105px}
+  .pub{grid-template-columns:1fr}.pub-mark{width:120px}
+  .news-row{grid-template-columns:1fr;gap:2px}
+}
+</style>
 </head>
 <body>
-  <div class="page">
-    <aside>
-      <img class="avatar" src="https://avatars.githubusercontent.com/u/87555933?v=4" alt="Jiang Yu">
-      <h1>Jiang Yu</h1>
-      <div class="tagline">Reliable Reasoning · Neuro-Symbolic AI · Trustworthy Foundation Models</div>
-      <div class="links">
-        <a href="https://scholar.google.com/citations?user=OhbV4CEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="https://orcid.org/0009-0005-2880-9009" target="_blank" rel="noopener">ORCID</a>
-        <a href="https://openreview.net/profile?id=%7EJiang_Yu8" target="_blank" rel="noopener">OpenReview</a>
-        <a href="https://github.com/Rozen12123" target="_blank" rel="noopener">GitHub</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">Jiang Yu</a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#research">Research</a>
+    </nav>
+  </div>
+</header>
+
+<div class="shell" id="top">
+  <aside class="sidebar">
+    <img class="photo" alt="Jiang Yu" src="assets/img/profile.jpg">
+    <div>
+      <div class="name">Jiang Yu</div>
+      <div class="role">Researcher in Reliable Reasoning &amp; Trustworthy AI</div>
+      <div class="profile-links">
+        <a href="https://scholar.google.com/citations?user=OhbV4CEAAAAJ&hl=en" target="_blank" rel="noopener"><span class="dot"></span>Google Scholar</a>
+        <a href="https://orcid.org/0009-0005-2880-9009" target="_blank" rel="noopener"><span class="dot"></span>ORCID</a>
+        <a href="https://openreview.net/profile?id=%7EJiang_Yu8" target="_blank" rel="noopener"><span class="dot"></span>OpenReview</a>
+        <a href="https://github.com/Rozen12123" target="_blank" rel="noopener"><span class="dot"></span>GitHub</a>
       </div>
-    </aside>
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>I am a researcher interested in reliable reasoning for foundation models, with a particular focus on reasoning verification, neuro-symbolic reasoning, and trustworthy AI. My work studies how to identify, verify, and improve failures in multi-step reasoning systems.</p>
-        <div class="chips">
-          <span class="chip">Reasoning Verification</span><span class="chip">Neuro-Symbolic Reasoning</span><span class="chip">Trustworthy AI</span><span class="chip">Foundation Models</span>
-        </div>
-      </section>
-      <section id="news">
-        <h2>News</h2>
-        <div class="news">
-          <div class="date">Sep 2026</div><div><strong>Mining Logic under Uncertainty</strong> was accepted to NeurIPS 2026.</div>
-          <div class="date">2026</div><div><strong>LogicSAGE</strong> was accepted to ICML 2026.</div>
-        </div>
-      </section>
-      <section id="publications">
-        <h2>Selected Publications</h2>
-        <div class="pub">
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero" id="about">
+      <h1>About Me</h1>
+      <p>
+        I work on reliable reasoning for foundation models, with a focus on reasoning verification,
+        neuro-symbolic methods, and trustworthy AI. My research studies how to detect, verify,
+        and improve failures in multi-step reasoning systems.
+      </p>
+      <p>
+        I am particularly interested in combining formal or probabilistic reasoning with modern
+        language models, and in developing interpretable signals for understanding when and why
+        reasoning fails.
+      </p>
+      <div class="interests">
+        <span class="tag">Reasoning Verification</span>
+        <span class="tag">Neuro-Symbolic AI</span>
+        <span class="tag">Trustworthy AI</span>
+        <span class="tag">Foundation Models</span>
+        <span class="tag">Formal &amp; Probabilistic Reasoning</span>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <div class="news-row">
+        <div class="news-date">Sep 2026</div>
+        <div class="news-text"><strong>Mining Logic under Uncertainty</strong> was accepted to NeurIPS 2026.</div>
+      </div>
+      <div class="news-row">
+        <div class="news-date">2026</div>
+        <div class="news-text"><strong>LogicSAGE</strong> was accepted to ICML 2026.</div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+
+      <article class="pub">
+        <div class="pub-mark"><strong>NeurIPS</strong><span>2026</span></div>
+        <div>
           <div class="pub-title">Mining Logic under Uncertainty: Probabilistic Soft Logic with Energy-Based Inference for Chain-of-Thought Verification</div>
           <div class="authors"><strong>Jiang Yu</strong>, Jinlong Tian, Kewei Cheng, Yue He, Haoxuan Li, Haotian Wang, Yunhai Wang, Wenjing Yang, Zhouchen Lin, Shixuan Liu</div>
-          <div class="venue">NeurIPS 2026</div>
-          <a class="badge" href="https://scholar.google.com/citations?user=OhbV4CEAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+          <div class="venue">Advances in Neural Information Processing Systems (NeurIPS), 2026</div>
+          <div class="buttons">
+            <a class="btn" href="https://neurips.cc/Downloads/2026" target="_blank" rel="noopener">Conference</a>
+            <a class="btn" href="https://scholar.google.com/citations?user=OhbV4CEAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+          </div>
         </div>
-        <div class="pub">
+      </article>
+
+      <article class="pub">
+        <div class="pub-mark"><strong>ICML</strong><span>2026</span></div>
+        <div>
           <div class="pub-title">LogicSAGE: Neuro-Symbolic Reasoning with Socratic-Guided Enhancement</div>
           <div class="authors">Jinlong Tian, <strong>Jiang Yu</strong>, Kewei Cheng, Fengxiang Cheng, Yue He, Yunfei Wang, Haotian Wang, Haoxuan Li, Wenjing Yang, Shixuan Liu</div>
-          <div class="venue">ICML 2026</div>
-          <a class="badge" href="https://scholar.google.com/citations?user=OhbV4CEAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+          <div class="venue">International Conference on Machine Learning (ICML), 2026</div>
+          <div class="buttons">
+            <a class="btn" href="https://icml.cc/Downloads/2026" target="_blank" rel="noopener">Conference</a>
+            <a class="btn" href="https://scholar.google.com/citations?user=OhbV4CEAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+          </div>
         </div>
-      </section>
-      <section id="research">
-        <h2>Research</h2>
-        <p>My current research centers on making language-model reasoning more verifiable and reliable. I am especially interested in methods that combine formal or probabilistic reasoning with foundation models, and in diagnostic signals that reveal when and why multi-step reasoning fails.</p>
-      </section>
-      <footer>© 2026 Jiang Yu · Built for GitHub Pages</footer>
-    </main>
-  </div>
+      </article>
+
+      <p class="note">Selected publications are shown here; additional work can be added as it becomes public.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research Themes</h2>
+      <div class="theme-grid">
+        <div class="theme">
+          <div class="theme-title">Verifiable Reasoning</div>
+          <p>Methods for auditing multi-step reasoning and distinguishing supported conclusions from plausible but invalid chains.</p>
+        </div>
+        <div class="theme">
+          <div class="theme-title">Neuro-Symbolic AI</div>
+          <p>Combining language-model flexibility with structured, formal, or probabilistic reasoning mechanisms.</p>
+        </div>
+        <div class="theme">
+          <div class="theme-title">Trustworthy Foundation Models</div>
+          <p>Interpretable diagnostics and verification tools for making foundation-model behavior more reliable.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2026 Jiang Yu · Academic Homepage</footer>
+  </main>
+</div>
 </body>
 </html>
