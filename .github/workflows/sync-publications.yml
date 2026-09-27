@@ -9,6 +9,7 @@ on:
     paths:
       - ".github/workflows/sync-publications.yml"
       - "scripts/sync_publications.py"
+      - "scripts/requirements.txt"
       - "_data/publication_overrides.json"
 
 permissions:
@@ -21,16 +22,16 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
+      - name: Install sync dependencies
+        run: pip install -r scripts/requirements.txt
       - name: Sync public publication metadata
         run: python scripts/sync_publications.py
-
       - name: Commit changes
         run: |
           if git diff --quiet -- _data/publications.json; then
