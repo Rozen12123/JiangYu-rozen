@@ -14,8 +14,6 @@ I am especially interested in combining formal or probabilistic reasoning with m
 
 My research interests include **Reasoning Verification**, **Neuro-Symbolic AI**, **Trustworthy Foundation Models**, and **Formal & Probabilistic Reasoning**.
 
-Google Scholar citations: **<span id='total_cit'>—</span>**.
-
 # ✨ News
 
 - *2026.09*: &nbsp;🎉 **Mining Logic under Uncertainty** was accepted by **NeurIPS 2026**.
@@ -25,11 +23,11 @@ Google Scholar citations: **<span id='total_cit'>—</span>**.
 
 - [**Mining Logic under Uncertainty: Probabilistic Soft Logic with Energy-Based Inference for Chain-of-Thought Verification**](https://neurips.cc/Downloads/2026)  
   **Jiang Yu**, Jinlong Tian, Kewei Cheng, Yue He, Haoxuan Li, Haotian Wang, Yunhai Wang, Wenjing Yang, Zhouchen Lin, Shixuan Liu  
-  **NeurIPS 2026** <span class='show_paper_citations paper-citations' data-title='Mining Logic under Uncertainty: Probabilistic Soft Logic with Energy-Based Inference for Chain-of-Thought Verification'></span>
+  **NeurIPS 2026**
 
 - [**LogicSAGE: Neuro-Symbolic Reasoning with Socratic-Guided Enhancement**](https://icml.cc/Downloads/2026)  
   Jinlong Tian, **Jiang Yu**, Kewei Cheng, Fengxiang Cheng, Yue He, Yunfei Wang, Haotian Wang, Haoxuan Li, Wenjing Yang, Shixuan Liu  
-  **ICML 2026** <span class='show_paper_citations paper-citations' data-title='LogicSAGE: Neuro-Symbolic Reasoning with Socratic-Guided Enhancement'></span>
+  **ICML 2026**
 
 # 🔬 Research
 
