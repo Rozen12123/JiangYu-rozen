@@ -1,0 +1,19 @@
+<div itemscope itemtype="http://schema.org/Person" class="profile_box">
+  <div class="author__avatar">
+    <img src="{{ site.author.avatar | relative_url }}" class="author__avatar" alt="{{ site.author.name }}">
+  </div>
+  <div class="author__content">
+    <h3 class="author__name">{{ site.author.name }}</h3>
+    {% if site.author.bio %}<p class="author__bio">{{ site.author.bio }}</p>{% endif %}
+  </div>
+  <div class="author__urls-wrapper">
+    <ul class="author__urls social-icons">
+      {% if site.description %}<li><div style="white-space:normal;margin-bottom:1em;">{{ site.description }}</div></li>{% endif %}
+      <li><a href="{{ site.author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      <li><a href="{{ site.author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+      <li><a href="{{ site.author.openreview }}"><i class="fas fa-fw fa-file-alt"></i> OpenReview</a></li>
+      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-fw fa-github"></i> GitHub</a></li>
+      {% if site.author.dblp %}<li><a href="{{ site.author.dblp }}"><i class="ai ai-dblp ai-fw"></i> DBLP</a></li>{% endif %}
+    </ul>
+  </div>
+</div>

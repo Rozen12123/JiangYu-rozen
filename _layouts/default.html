@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }} - Homepage</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.className=document.documentElement.className.replace(/\bno-js\b/g,'')+' js ';</script>
+  <link rel="stylesheet" href="https://rayeren.github.io/acad-homepage.github.io/assets/css/main.css">
+  <link rel="stylesheet" href="https://rayeren.github.io/acad-homepage.github.io/assets/css/academicons.css">
+  <style>
+    .author__avatar img{object-fit:cover;object-position:center 20%;aspect-ratio:1/1}
+    .page__content h1{margin-top:1.15em}
+    .page__content h1:first-of-type{margin-top:.2em}
+    .paper-citations{white-space:nowrap}
+  </style>
+</head>
+<body>
+  {% include masthead.html %}
+  <div id="main" role="main">
+    {% include sidebar.html %}
+    <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+      <div class="page__inner-wrap">
+        <section class="page__content" itemprop="text">
+          {{ content }}
+        </section>
+      </div>
+    </article>
+  </div>
+  {% include scripts.html %}
+</body>
+</html>

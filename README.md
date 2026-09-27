@@ -1,14 +1,10 @@
 # Jiang Yu — Academic Homepage
 
-Academic homepage for Jiang Yu.
+This site uses the AcadHomepage visual style used by many academic homepages, including the examples discussed in chat.
 
-## Profiles
+## Automatic updates
 
-- Google Scholar: https://scholar.google.com/citations?user=OhbV4CEAAAAJ&hl=en
-- ORCID: https://orcid.org/0009-0005-2880-9009
-- OpenReview: https://openreview.net/profile?id=%7EJiang_Yu8
-- GitHub: https://github.com/Rozen12123
-
-## Deployment
-
-This repository contains a static `index.html` and is ready for GitHub Pages.
+- GitHub Pages automatically rebuilds after changes to the main branch.
+- Google Scholar citation data is refreshed daily by GitHub Actions using Scholar ID `OhbV4CEAAAAJ`.
+- Total citations and citation counts for matched publications are filled automatically on the homepage.
+- Publications and News remain manually curated to avoid incorrect automatic additions.

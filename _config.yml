@@ -1,0 +1,35 @@
+title: "Jiang Yu"
+description: "Researcher in Reliable Reasoning, Neuro-Symbolic AI, and Trustworthy Foundation Models."
+repository: "Rozen12123/JiangYu-rozen"
+url: "https://rozen12123.github.io"
+baseurl: "/JiangYu-rozen"
+google_scholar_stats_use_cdn: false
+
+author:
+  name: "Jiang Yu"
+  avatar: "images/profile.jpg"
+  bio: "Reliable Reasoning · Neuro-Symbolic AI · Trustworthy AI"
+  googlescholar: "https://scholar.google.com/citations?user=OhbV4CEAAAAJ&hl=en"
+  github: "Rozen12123"
+  orcid: "https://orcid.org/0009-0005-2880-9009"
+  openreview: "https://openreview.net/profile?id=%7EJiang_Yu8"
+  dblp:
+
+include:
+  - _pages
+exclude:
+  - google_scholar_crawler
+  - README.md
+
+markdown: kramdown
+highlighter: rouge
+encoding: "utf-8"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      author_profile: true
+
+timezone: Asia/Shanghai
