@@ -8,7 +8,9 @@ author_profile: true
 
 # 👨‍🎓 About Me
 
-I am interested in **reliable reasoning for foundation models**, with a particular focus on reasoning verification, neuro-symbolic reasoning, and trustworthy AI. My research studies how to identify, verify, and improve failures in multi-step reasoning systems.
+I am studying **Computer Science and Technology** at the **College of Computer Science and Technology, National University of Defense Technology (NUDT)**, under the supervision of **Prof. Wenjing Yang** and **Prof. Shixuan Liu**.
+
+My research focuses on **reliable reasoning for foundation models**, with a particular emphasis on reasoning verification, neuro-symbolic reasoning, and trustworthy AI. I study how to identify, verify, and improve failures in multi-step reasoning systems.
 
 I am especially interested in combining formal or probabilistic reasoning with modern language models, and in developing interpretable signals for understanding when and why reasoning fails.
 
