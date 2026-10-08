@@ -22,8 +22,7 @@
     "priority": 20,
     "curated": true,
     "sources": [
-      "curated",
-      "google-scholar"
+      "curated"
     ]
   },
   {
@@ -36,8 +35,7 @@
     "priority": 30,
     "curated": true,
     "sources": [
-      "curated",
-      "google-scholar"
+      "curated"
     ]
   }
 ]
