@@ -1,41 +1,43 @@
 [
-  {
-    "title": "Mining Logic under Uncertainty: Probabilistic Soft Logic with Energy-Based Inference for Chain-of-Thought Verification",
-    "authors_html": "<strong>Jiang Yu</strong>, Jinlong Tian, Kewei Cheng, Yue He, Haoxuan Li, Haotian Wang, Yunhai Wang, Wenjing Yang, Zhouchen Lin, Shixuan Liu",
-    "venue": "NeurIPS 2026",
-    "year": 2026,
-    "url": "https://neurips.cc/Downloads/2026",
-    "award": "",
-    "priority": 10,
-    "curated": true,
-    "sources": [
-      "curated"
-    ]
-  },
-  {
-    "title": "LogicSAGE: Neuro-Symbolic Reasoning with Socratic-Guided Enhancement",
-    "authors_html": "Jinlong Tian<sup>*</sup>, <strong>Jiang Yu<sup>*</sup></strong>, Kewei Cheng, Fengxiang Cheng, Yue He, Yunfei Wang, Haotian Wang, Haoxuan Li, Wenjing Yang, Shixuan Liu",
-    "venue": "ICML 2026",
-    "year": 2026,
-    "url": "https://icml.cc/Downloads/2026",
-    "award": "",
-    "priority": 20,
-    "curated": true,
-    "sources": [
-      "curated"
-    ]
-  },
-  {
-    "title": "Logical-SAGE: A Logical Socratic Architecture for Guided Evolution in Neuro-Symbolic Reasoning",
-    "authors_html": "Jinlong Tian<sup>*</sup>, <strong>Jiang Yu<sup>*</sup></strong>, Kewei Cheng, Yue He, Yunfei Wang, Huibin Tan, Haotian Wang, Wenjing Yang, Shixuan Liu",
-    "venue": "AAAI 2026 Bridge: Logical and Symbolic Reasoning in Language Models",
-    "year": 2026,
-    "url": "https://openreview.net/forum?id=65A1alu4Ib",
-    "award": "Outstanding Paper Award",
-    "priority": 30,
-    "curated": true,
-    "sources": [
-      "curated"
-    ]
-  }
+ {
+  "title": "Mining Logic under Uncertainty: Probabilistic Soft Logic with Energy-Based Inference for Chain-of-Thought Verification",
+  "authors_html": "<strong>Jiang Yu</strong>, Jinlong Tian, Kewei Cheng, Yue He, Haoxuan Li, Haotian Wang, Yunhai Wang, Wenjing Yang, Zhouchen Lin, Shixuan Liu",
+  "venue": "NeurIPS 2026",
+  "year": 2026,
+  "url": "https://neurips.cc/virtual/2026/loc/paris/poster/152179",
+  "award": "",
+  "priority": 10,
+  "curated": true,
+  "sources": [
+   "curated"
+  ]
+ },
+ {
+  "title": "LogicSAGE: Neuro-Symbolic Reasoning with Socratic-Guided Enhancement",
+  "authors_html": "Jinlong Tian<sup>*</sup>, <strong>Jiang Yu<sup>*</sup></strong>, Kewei Cheng, Fengxiang Cheng, Yue He, Yunfei Wang, Haotian Wang, Haoxuan Li, Wenjing Yang, Shixuan Liu",
+  "venue": "ICML 2026",
+  "year": 2026,
+  "url": "https://icml.cc/Downloads/2026",
+  "award": "",
+  "priority": 20,
+  "curated": true,
+  "sources": [
+   "curated",
+   "google-scholar"
+  ]
+ },
+ {
+  "title": "Logical-SAGE: A Logical Socratic Architecture for Guided Evolution in Neuro-Symbolic Reasoning",
+  "authors_html": "Jinlong Tian<sup>*</sup>, <strong>Jiang Yu<sup>*</sup></strong>, Kewei Cheng, Yue He, Yunfei Wang, Huibin Tan, Haotian Wang, Wenjing Yang, Shixuan Liu",
+  "venue": "AAAI 2026 Bridge: Logical and Symbolic Reasoning in Language Models",
+  "year": 2026,
+  "url": "https://openreview.net/forum?id=65A1alu4Ib",
+  "award": "Outstanding Paper Award",
+  "priority": 30,
+  "curated": true,
+  "sources": [
+   "curated",
+   "google-scholar"
+  ]
+ }
 ]

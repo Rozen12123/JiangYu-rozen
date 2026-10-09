@@ -18,6 +18,7 @@ My research interests include **Reasoning Verification**, **Neuro-Symbolic AI**,
 
 # ✨ News
 
+- *2026.10*: &nbsp;🔍 Serving as a **Reviewer** for **ICLR 2027**.
 - *2026.09*: &nbsp;🎉 **Mining Logic under Uncertainty** was accepted by **NeurIPS 2026**.
 - *2026.04*: &nbsp;🎉 **LogicSAGE** was accepted by **ICML 2026**.
 - *2026.01*: &nbsp;🏆 **Logical-SAGE** received an **Outstanding Paper Award** at the **AAAI 2026 Bridge on Logical and Symbolic Reasoning in Language Models**.
